@@ -147,7 +147,9 @@ app.put('/post', uploadMiddleware.single('file'), async (req,res) =>{
     });
 })
 
-app.listen(4000);
+app.listen(PORT, () => {
+    console.log(`ok ${PORT}`)
+});
 
 //robert
 //ubr0AcU26aCT59vP
